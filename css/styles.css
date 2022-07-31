@@ -1,0 +1,114 @@
+
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #343434;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img{
+    width: 300px;
+}
+header{
+    color: #F7FFF7;
+    background: #2F3061;
+}
+.projects{
+    background: #F7FFF7;
+}
+.work-experience{
+    background: #A1C6D7;
+}
+footer{
+    color: #F7FFF7;
+    background: #343434;
+    text-align: center;
+}
+a:hover{
+    text-decoration: none;
+}
+.projects a{
+ color: #2F3061;
+}
+.projects .btn{
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+.projects .btn:hover{
+    background: rgba(47, 48, 97, 80%);
+}
+h1{
+    font-size: 17px;
+}
+h2{
+    font-size: 12px;
+
+}
+h2, h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+.content-wrap{
+    max-width: 800px;
+    padding: 60px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.project-item{
+    border-bottom: 1px dashed #343434;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+h3{
+    margin-top: 0;
+}
+.content-list{
+    list-style-type: none;
+    padding: 0;
+}
+.content-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+h3 + p {
+    font-style: italic;
+}
+.education{
+    background-image: url("../images/yello.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 20px;
+}
+@media  screen and (min-width: 750px) {
+    header, footer{
+        text-align: center;
+    }
+    .project-item img{
+        margin-right: 20px;
+        float: left;
+    }
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: 1px dashed #343434;
+        column-gap: 20px;
+        padding: 25px 0;
+    }
+    .content-list{
+        display: flex;
+        justify-content: center;
+    }
+}
